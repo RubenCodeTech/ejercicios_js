@@ -246,3 +246,21 @@ console.log(days())
 let word = "misantropía"
 let reverseword = word.split("").reverse().join("");
 console.log(reverseword);
+
+//5. Escribe una función swap que tome un array de length 2 y cambie el orden de sus elementos, pero devolviendo el mismo array.
+function swap(){
+    let arraySwap = ["1n", "2n"];
+    return arraySwap.reverse();
+}
+console.log(swap());
+
+//bonus track.
+function manualSwap(){
+    let arrayManualSwap = ["a","b"]
+    let b = arrayManualSwap[1]
+    arrayManualSwap[1] = arrayManualSwap[0]
+    arrayManualSwap[0] = b
+    return arrayManualSwap
+
+}
+console.log(manualSwap())
